@@ -19,8 +19,11 @@ category = "object"
 # Tags help users find your extension on the website.
 tags = ["Compositing"]
 
+support = "https://github.com/Will-Hadfield/lightsaber-vfx-blender/issues"
+
 # Permissions that the reviewer will verify.
 # "files" is required because the addon reads and writes preset JSON files
 # to the user's extension data folder (bpy.utils.extension_path_user).
 [permissions]
 files = "Read/write lightsaber preset files in user data folder"
+
