@@ -1,0 +1,26 @@
+schema_version = "1.0.0"
+
+id             = "Lightsaber_VFX"
+version        = "1.0.0"
+name           = "Lightsaber VFX"
+tagline        = "Super simple lightsaber VFX setup for Blender"
+maintainer     = "Your Name <your@email.com>"
+type           = "add-on"
+
+# Blender 5.0.1 is the minimum because the addon targets the 5.x API.
+blender_version_min = "5.0.1"
+
+# Must be GPL-3.0-or-later for all add-ons using the bpy API.
+license = ["SPDX:GPL-3.0-or-later"]
+
+# Category shown on the extensions website.
+category = "object"
+
+# Tags help users find your extension on the website.
+tags = ["Compositing"]
+
+# Permissions that the reviewer will verify.
+# "files" is required because the addon reads and writes preset JSON files
+# to the user's extension data folder (bpy.utils.extension_path_user).
+[permissions]
+files = "Read/write lightsaber preset files in user data folder"
