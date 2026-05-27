@@ -1514,9 +1514,11 @@ class BLADE_OT_create_mask(bpy.types.Operator):
         # Keyframe visibility: hidden at frame-1 and frame+1, visible at frame.
         for hide, fr in ((True, frame - 1), (False, frame), (True, frame + 1)):
             plane.hide_viewport = hide
-            plane.hide_render   = hide
             plane.keyframe_insert(data_path="hide_viewport", frame=fr)
-            plane.keyframe_insert(data_path="hide_render",   frame=fr)
+
+        for hide, fr in ((True, frame - 2), (False, frame - 1), (True, frame)):
+            plane.hide_render = hide
+            plane.keyframe_insert(data_path="hide_render", frame=fr)
         # Leave it visible now for immediate editing
         plane.hide_viewport = False
         plane.hide_render   = False
