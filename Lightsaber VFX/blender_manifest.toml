@@ -1,7 +1,7 @@
 schema_version = "1.0.0"
 
 id             = "Lightsaber_VFX"
-version        = "1.0.0"
+version        = "1.0.2"
 name           = "Lightsaber VFX"
 tagline        = "Super simple lightsaber VFX setup for Blender"
 maintainer     = "Your Name <your@email.com>"
